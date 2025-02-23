@@ -8,3 +8,16 @@ Proyecto Python y Mysql:
 
 Prueba de cambios
 """
+
+print("""
+Acciones disponibles:
+    - registro
+    - login
+""")
+
+accion = input("¿Qué quieres hacer?: ")
+
+if accion == "registro":
+    print("Ok!! Vamos a registrarte en el sistema...")
+elif accion == "login":
+    print("Vale!! Identifícate en el sistema...")
