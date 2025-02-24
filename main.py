@@ -18,6 +18,12 @@ Acciones disponibles:
 accion = input("¿Qué quieres hacer?: ")
 
 if accion == "registro":
-    print("Ok!! Vamos a registrarte en el sistema...")
+    print("\nOk!! Vamos a registrarte en el sistema...")
+    nombre = input("¿Cuál es tu nombre?: ")
+    apellidos = input("¿Cuáles son tus apellidos?: ")
+    email = input("Introduce tu email: ")
+    password = input("Introduce tu contraseña: ")
 elif accion == "login":
     print("Vale!! Identifícate en el sistema...")
+    email = input("Introduce tu email: ")
+    password = input("Introduce tu contraseña: ")
