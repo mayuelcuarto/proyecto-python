@@ -9,21 +9,18 @@ Proyecto Python y Mysql:
 Prueba de cambios
 """
 
+from usuarios import acciones
+
 print("""
 Acciones disponibles:
     - registro
     - login
 """)
 
+hazEl = acciones.Acciones()
 accion = input("¿Qué quieres hacer?: ")
 
 if accion == "registro":
-    print("\nOk!! Vamos a registrarte en el sistema...")
-    nombre = input("¿Cuál es tu nombre?: ")
-    apellidos = input("¿Cuáles son tus apellidos?: ")
-    email = input("Introduce tu email: ")
-    password = input("Introduce tu contraseña: ")
+    hazEl.registro()
 elif accion == "login":
-    print("Vale!! Identifícate en el sistema...")
-    email = input("Introduce tu email: ")
-    password = input("Introduce tu contraseña: ")
+    hazEl.login()
